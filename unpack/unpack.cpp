@@ -7,13 +7,13 @@ struct IMG_STRUCT{
     char sign[4];
     int headSize;
     char unKnow[4];
-    char hardwareId[6];
-    char sequence[6];
+    char hardwareId[8];
+    unsigned int sequence;
     unsigned int fileSize;
     char fileDate[16];
     char fileTime[16];
     char fileName[32];
-    char checksum[8];
+    char headChecksum[2];
 };
 
 int main(int argc, char* argv[]) {
